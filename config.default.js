@@ -10,16 +10,16 @@ var config = {
 
   get mini_assets() { return !this.debug; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
-  name: 'Nodeclub', // 社区名字
-  description: 'CNode：Node.js专业中文社区', // 社区的描述
-  keywords: 'nodejs, node, express, connect, socket.io',
+  name: '我爱吉他', // 社区名字
+  description: '52jita, 爱吉他的都爱这里', // 社区的描述
+  keywords: '吉他, 吉他谱, 音乐, 论坛',
 
   // 添加到 html head 中的信息
   site_headers: [
-    '<meta name="author" content="EDP@TAOBAO" />'
+    '<meta name="author" content="ming" />'
   ],
   site_logo: '/public/images/text_logo.png', // default is `name`
-  site_icon: '/public/images/cnode_icon_32.png', // 默认没有 favicon, 这里填写网址
+  site_icon: '/public/images/g_32.png', // 默认没有 favicon, 这里填写网址
   // 右上角的导航区
   site_navs: [
     // 格式 [ path, title, [target=''] ]
@@ -53,10 +53,10 @@ var config = {
 
   // RSS配置
   rss: {
-    title: 'CNode：Node.js专业中文社区',
-    link: 'http://cnodejs.org',
+    title: '52jita：52jita 专业吉他社区',
+    link: 'http://www.52jita.net',
     language: 'zh-cn',
-    description: 'CNode：Node.js专业中文社区',
+    description: '52jita, 爱吉他的都爱这里',
     //最多获取的RSS Item数量
     max_rss_items: 50
   },
