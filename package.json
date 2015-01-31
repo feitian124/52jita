@@ -1,11 +1,10 @@
 {
-  "name": "nodeclub",
+  "name": "52jita",
   "version": "1.0.0",
   "main": "app.js",
   "private": true,
   "customHost": [
-    "cnodejs.org",
-    "club.cnodejs.org"
+    "www.52jita.net"
   ],
   "dependencies": {
     "async": "0.9.0",

@@ -1,4 +1,3 @@
-
 var mcache = require('memory-cache');
 
 var get = function (key, callback) {

@@ -1,11 +1,3 @@
-/*!
- * nodeclub - controllers/topic.js
- */
-
-/**
- * Module dependencies.
- */
-
 var validator = require('validator');
 
 var at = require('../common/at');

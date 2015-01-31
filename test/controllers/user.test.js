@@ -1,13 +1,3 @@
-/*!
- * nodeclub - user controller test
- * Copyright(c) 2012 fengmk2 <fengmk2@gmail.com>
- * MIT Licensed
- */
-
-/**
- * Module dependencies.
- */
-
 var should = require('should');
 var app = require('../../app');
 var request = require('supertest')(app);

@@ -1,13 +1,3 @@
-/*!
- * nodeclub - route.js
- * Copyright(c) 2012 fengmk2 <fengmk2@gmail.com>
- * MIT Licensed
- */
-
-/**
- * Module dependencies.
- */
-
 var express = require('express');
 var sign = require('./controllers/sign');
 var site = require('./controllers/site');

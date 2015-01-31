@@ -1,14 +1,3 @@
-/*!
- * nodeclub - site index controller.
- * Copyright(c) 2012 fengmk2 <fengmk2@gmail.com>
- * Copyright(c) 2012 muyuan
- * MIT Licensed
- */
-
-/**
- * Module dependencies.
- */
-
 var User = require('../proxy').User;
 var Topic = require('../proxy').Topic;
 var config = require('../config');
@@ -163,7 +152,7 @@ exports.sitemap = function (req, res, next) {
           return next(err);
         }
         topics.forEach(function (topic) {
-          urlset.ele('url').ele('loc', 'http://cnodejs.org/topic/' + topic._id);
+          urlset.ele('url').ele('loc', 'http://www.52jita.net/topic/' + topic._id);
         });
 
         var sitemapData = urlset.end();

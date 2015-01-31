@@ -1,4 +1,3 @@
-
 var should = require('should');
 var mm = require('mm');
 var support = require('../support/support');

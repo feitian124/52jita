@@ -1,13 +1,3 @@
-/*!
- * nodeclub - rss controller test
- * Copyright(c) 2012 fengmk2 <fengmk2@gmail.com>
- * MIT Licensed
- */
-
-/**
- * Module dependencies.
- */
-
 var request = require('supertest');
 var app = require('../../app');
 var config = require('../../config');
