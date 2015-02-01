@@ -182,7 +182,7 @@ describe('test/controllers/sign.test.js', function () {
     it('should update search pass', function (done) {
       done = pedding(done, 2);
       mm(mailService, 'sendMail', function (data) {
-        data.from.should.equal('我爱吉他 <club@126.com>');
+        data.from.should.equal('我爱吉他 <admin@52jita.net>');
         data.to.should.match(new RegExp(loginname));
         data.subject.should.equal('我爱吉他社区密码重置');
         data.html.should.match(new RegExp('<p>您好：' + loginname));
