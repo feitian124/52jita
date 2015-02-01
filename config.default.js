@@ -63,11 +63,11 @@ var config = {
 
   // 邮箱配置
   mail_opts: {
-    host: 'smtp.126.com',
+    host: 'smtp.exmail.qq.com',
     port: 25,
     auth: {
-      user: 'club@126.com',
-      pass: 'club'
+      user: 'admin@52jita.net',
+      pass: 'password'
     }
   },
 
@@ -82,7 +82,7 @@ var config = {
   GITHUB_OAUTH: {
     clientID: 'your GITHUB_CLIENT_ID',
     clientSecret: 'your GITHUB_CLIENT_SECRET',
-    callbackURL: 'http://cnodejs.org/auth/github/callback'
+    callbackURL: 'http://www.52jita.net/auth/github/callback'
   },
   // 是否允许直接注册（否则只能走 github 的方式）
   allow_sign_up: true,
@@ -109,7 +109,8 @@ var config = {
   tabs: [
     ['share', '分享'],
     ['ask', '问答'],
-    ['job', '招聘'],
+    ['feedback', '反馈'],
+    ['other', '其他']
   ],
 
   // 极光推送
