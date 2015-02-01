@@ -10,7 +10,7 @@ describe('test/controllers/site.test.js', function () {
     request.get('/').end(function (err, res) {
       res.status.should.equal(200);
       res.text.should.containEql('积分榜');
-      res.text.should.containEql('友情社区');
+      res.text.should.containEql('开源项目');
       done(err);
     });
   });
@@ -19,7 +19,7 @@ describe('test/controllers/site.test.js', function () {
     request.get('/?page=-1').end(function (err, res) {
       res.status.should.equal(200);
       res.text.should.containEql('积分榜');
-      res.text.should.containEql('友情社区');
+      res.text.should.containEql('开源项目');
       done(err);
     });
   });
