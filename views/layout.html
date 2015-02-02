@@ -9,6 +9,7 @@
   <meta name="apple-itunes-app" content="app-id=954734793">
   <!-- see http://smerity.com/articles/2013/where_did_all_the_http_referrers_go.html -->
   <meta name="referrer" content="always">
+  <meta name="baidu-site-verification" content="V0lfthZiM3" />
 
   <%
   var headers = config.site_headers || [];
@@ -84,10 +85,12 @@
           <%- config.name %>
         <%}%>
       </a>
-
-      <form id='search_form' class='navbar-search' action="/search">
-        <input type='text' id='q' name='q' class='search-query span3' value=''/>
-      </form>
+      <!-- 百度站内搜索 -->
+      <script type="text/javascript">
+        document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://znsv.baidu.com/customer_search/api/js?sid=4340780800317838962') 
+          + '&plate_url=' + (encodeURIComponent(window.location.href)) 
+          + '&t=' + (Math.ceil(new Date()/3600000)) + unescape('"%3E%3C/script%3E'));
+      </script>
       <ul class='nav pull-right'>
         <li><a href='/'>首页</a></li>
         <% if (typeof(current_user) !== 'undefined'){ %>
