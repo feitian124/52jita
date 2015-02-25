@@ -1,7 +1,10 @@
 {
   "name": "52jita",
   "version": "1.0.0",
+  "private": true,
   "main": "app.js",
+  "description": "A guitar fan's bbs",
+  "repository": "https://github.com/feitian124/52jita.git",
   "customHost": [
     "www.52jita.net"
   ],
