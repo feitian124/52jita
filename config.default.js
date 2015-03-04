@@ -111,8 +111,8 @@ var config = {
 
   // 极光推送
   jpush: {
-    appKey: 'your access key',
-    masterSecret: 'your secret key',
+    appKey: 'YourAccessKeyyyyyyyyyyyy',
+    masterSecret: 'YourSecretKeyyyyyyyyyyyyy',
     isDebug: false
   }
 };
