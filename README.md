@@ -15,6 +15,8 @@ Nodeclub
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 
+https://github.com/fraserxu/node-auth-weibo.git
+
 ## 介绍
 
 Nodeclub 是使用 **Node.js** 和 **MongoDB** 开发的社区系统，界面优雅，功能丰富，小巧迅速，
