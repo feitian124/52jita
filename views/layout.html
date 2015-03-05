@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
 <head>
   <!-- meta -->
   <meta charset="utf-8"/>
@@ -54,16 +54,8 @@
   .js('/public/javascripts/responsive.js')
   .done(assets, config.site_static_host, config.mini_assets)
   %>
-
-  <% if (typeof(topic) !== 'undefined') { %>
-  <title><%= topic.title %> - <%= config.name %></title>
-  <% } else if (typeof(pageTitle) !== 'undefined') { %>
-  <title><%= pageTitle %> - <%= config.name %></title>
-  <% } else { %>
-  <title><%= config.description %></title>
-  <% } %>
-  <meta content="_csrf" name="csrf-param">
-  <meta content="<%= csrf %>" name="csrf-token">
+  <!-- sina weibo -->
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1556395735&debug=true" type="text/javascript" charset="utf-8"></script>
   <!-- baidu 统计 -->
   <script>
     var _hmt = _hmt || [];
@@ -74,6 +66,15 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+  <% if (typeof(topic) !== 'undefined') { %>
+  <title><%= topic.title %> - <%= config.name %></title>
+  <% } else if (typeof(pageTitle) !== 'undefined') { %>
+  <title><%= pageTitle %> - <%= config.name %></title>
+  <% } else { %>
+  <title><%= config.description %></title>
+  <% } %>
+  <meta content="_csrf" name="csrf-param">
+  <meta content="<%= csrf %>" name="csrf-token">
 </head>
 <body>
 <!-- navbar -->

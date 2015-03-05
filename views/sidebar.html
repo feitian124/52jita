@@ -13,16 +13,31 @@
       <p><%= config.description %></p>
 
       <div>
-        您可以
-        <a href='/signin'>登录</a>
-        或
-        <a href='/signup'>注册</a>
-        , 也可以
+        您可以 <a href='/signin'>登录</a> 或 <a href='/signup'>注册</a> , 也可以
         <a href="/auth/github">
           <span class="span-info">
             通过 GitHub 登录
           </span>
         </a>
+        <div id="wb_connect_btn" >
+            通过 Weibo 登录
+        </div>
+        <script>
+          WB2.anyWhere(function (W) {
+              W.widget.connectButton({
+                  id: "wb_connect_btn",
+                  type: '3,2',
+                  callback: {
+                      login: function (o) { //登录后的回调函数
+                          alert("login: " + o.screen_name)
+                      },
+                      logout: function () { //退出后的回调函数
+                          alert('logout');
+                      }
+                  }
+              });
+          });
+        </script>
       </div>
     </div>
     <% } %>
@@ -107,3 +122,4 @@
   </div>
   -->
 </div>
+
